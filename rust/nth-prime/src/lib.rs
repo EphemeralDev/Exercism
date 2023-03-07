@@ -6,7 +6,11 @@ pub fn nth(n: u32) -> u32 {
         if prime_count == n {
             return candidate;
         }
-        candidate += 1;
+        if candidate < 3 {
+            candidate += 1;
+        } else {
+            candidate += 2;
+        }
         if primality_test(candidate) {
             prime_count += 1;
         }
