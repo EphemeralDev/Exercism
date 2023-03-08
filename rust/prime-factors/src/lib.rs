@@ -1,5 +1,3 @@
-//Naive solution from https://www.geeksforgeeks.org/prime-factor/
-
 pub fn factors(mut n: u64) -> Vec<u64> {
     let mut factor: Vec<u64> = Vec::new();
 
